@@ -43,6 +43,13 @@ table {
 Theme Styles
 *******************************************************************************/
 
+/* prevent horizontal scrolling 
+html, body {
+  position:relative;
+  overflow-x:hidden;
+}
+*/
+
 body {
   box-sizing: border-box;
   color:#373737;
@@ -51,6 +58,7 @@ body {
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -385,7 +393,6 @@ Small Device Styles
   }
 
   .inner {
-    min-width: 320px;
     max-width: 480px;
   }
 
@@ -433,7 +440,6 @@ Small Device Styles
   }
 
   .inner {
-    min-width: 240px;
     max-width: 320px;
   }
 
